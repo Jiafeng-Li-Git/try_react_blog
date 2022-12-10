@@ -1,0 +1,46 @@
+.topBar{
+    height: 64px;
+    width: 100%;
+    background: rgb(115, 185, 250);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    color: white;
+    margin-top: 0px;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navspan {
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 2px;
+    color:#444;
+}
+
+ul {
+    height: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+li {
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    color: #444
+}
+
+    
+li:hover {
+    color: white;
+}
