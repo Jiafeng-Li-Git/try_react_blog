@@ -1,6 +1,7 @@
 import './topBar.css'
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {Avatar} from 'antd'
 
 
 const nav_links = [
@@ -23,7 +24,7 @@ const nav_links = [
 ]
 
 
-export default function TopBar(){
+export default function TopBar({user}){
     return (
         <nav className='topBar'>
             <span className="navspan">first-react-blog</span>
@@ -33,6 +34,10 @@ export default function TopBar(){
                         <Link to={link.path}>{link.title}</Link>
                     </li>
             ))}
+            <span>
+                <Avatar src="https://joeschmoe.io/api/v1/random"/>
+                <span className='theUser'> {`${user.username}`}</span>
+            </span>
         </ul>
         </nav>
     )

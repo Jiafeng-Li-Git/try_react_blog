@@ -4,7 +4,7 @@ import App from './App';
 import {ApolloClient, ApolloProvider, InMemoryCache} from "@apollo/client"
 
 const client = new ApolloClient({
-  uri: "https://ca-central-1.cdn.hygraph.com/content/claocfir54idz01ta37mv7bxv/master",
+  uri: "https://api-ca-central-1.hygraph.com/v2/claocfir54idz01ta37mv7bxv/master",
   cache: new InMemoryCache()
 })
 
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-    <App />
+      <App />
     </ApolloProvider>
   </React.StrictMode>
 );
