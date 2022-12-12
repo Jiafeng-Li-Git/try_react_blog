@@ -14,17 +14,12 @@ function LoginForm({ Login }){
     const onSubmit = (event) => {
         event.preventDefault();
         console.log(data)
-        if(data.author == null){
-            setError("invalid username")
-            var flag = true;
-        }
 
         if (details.password == data.author.password){
             setUser({username:details.username})
         } else{
             setError("Password is not correct!")
         }
-        
     }
 
     return (
